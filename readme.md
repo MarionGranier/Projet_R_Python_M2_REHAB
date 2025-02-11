@@ -1,16 +1,16 @@
 # R and Python project for Master’s internship 
 
 ## Scientific problem
-    Stroke and non-use introduction
+Stroke and non-use introduction
 
 ### Aim:
-    Main objective
+Main objective
 
 ### Method:
-    Method
+Method
 
 ### Participants:
-    A group of 5 post-stroke patients.
+A group of 5 post-stroke patients.
 
 ### Outcome measure:
 

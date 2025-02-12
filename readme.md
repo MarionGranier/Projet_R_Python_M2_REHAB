@@ -14,10 +14,14 @@ Each participant wore an AX3 accelerometer (Axivity, Newcastle Helix, England, h
 5 hemiparetic patients in the chronic phase of stroke.
 
 ### Outcome measure:
-Use: amount of arm movements 
-FuncUse: amount of functional arm movements
-(Func)UseRatio = (Func)Use of paretic UL / paretic and non-paretic (Func)Use x 100
-Fugl-Meyer Upper Extremity score /66
+Use: amount of arm movements   
+
+FuncUse: amount of functional arm movements  
+
+(Func)UseRatio = (Func)Use of paretic UL / paretic and non-paretic (Func)Use x 100  
+
+Fugl-Meyer Upper Extremity score /66  
+
 VAS fatigue score /100
 
 ### Results of analysis:

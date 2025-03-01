@@ -14,23 +14,33 @@ Each participant wore an AX3 accelerometer (Axivity, Newcastle Helix, England, h
 5 hemiparetic patients in the chronic phase of stroke.
 
 ### Outcome measure:
-Use: amount of arm movements   
+FuncUse: amount of functional arm movements   
 
-FuncUse: amount of functional arm movements  
+$\text{FuncUseRatio} = \frac{\text{FuncUse of paretic UL}}{\text{paretic and non-paretic UL FuncUse}} \times 100$
 
-(Func)UseRatio = (Func)Use of paretic UL / paretic and non-paretic (Func)Use x 100  
-
-Fugl-Meyer Upper Extremity score /66  
-
-VAS fatigue score /100
 
 ### Results of analysis:
-
+Analysis in progress...
 
 ## Data organization
 
 ### Participants data:
+`participants_X.csv`:   
+- `X` is the ID of the month of record (`0` = first month ; `1` = second month ; `2` = third month ; `3` = fourth month ; `4` = fifth month ; `5` = sixth month)
+- The file contains, for each patient, their anonymous ID, the start and end date of recording, the sampling frequency, their age, their laterality, the number of months post-stroke, the paretic side, the Fugl-Meyer (FM) score (/66), the Barthel score (/100), the Box and Blocks test (bbt) scores.
 
 ### Actimetry data: 
+For each patient and each month:
+- `left_ymd.csv`
+- `right_ymd.csv`
+- `left.cwa`
+- `right.cwa`
+
+## Scripts
+
+`is_data_exploitable.ipynb`:     
+- **Aim**: Checks that the actimetric data is present and exploitable (the data cannot be used if the exposure time is less than 5 days).  
+- **Input**: `right.cwa` or `left.cwa`  
+- **Output**: present or not present, exploitable or not exploitable (number of days of wearing)
 
 #

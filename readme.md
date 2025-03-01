@@ -46,11 +46,13 @@ For each patient and each month:
     - Column 4: temperature in degree Celsius (°C)
     - Column 5: light in lux (lx)
 
-## Scripts
-
+## Notebooks organization
 `is_data_exploitable.ipynb`:     
 - **Aim**: Checks that the actimetric data is present and exploitable (the data cannot be used if the exposure time is less than 5 days). 
 - **Input**: `right.cwa` or `left.cwa`  
 - **Output**: present or not present, exploitable or not exploitable (number of days of wearing)
+
+## Results organization
+No results available yet...
 
 #

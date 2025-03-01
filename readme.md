@@ -31,15 +31,25 @@ Analysis in progress...
 
 ### Actimetry data: 
 For each patient and each month:
-- `left_ymd.csv`
-- `right_ymd.csv`
-- `left.cwa`
-- `right.cwa`
+- `left_ymd.csv` and `right_ymd.csv`: 7-day actimetric data from each patient's arm
+    - Column 0: time stamp (YYYY-MM-DD HH:MM:SS.SSS)
+    - Column 1, 2 and 3: acceleration of x, y and z axes
+      - Sampling frequency: 50 Hz
+      - Amplitude range: - 8 g, + 8 g
+      - Acceleration unit: g
+- `left.cwa` and `right.cwa`: 7-day actimetric data from each patient's arm
+    - Column 0: time stamp (YYYY-MM-DD HH:MM:SS.SSS)
+    - Column 1, 2 and 3: acceleration of x, y and z axes
+      - Sampling frequency: 50 Hz
+      - Amplitude range: - 8 g, + 8 g
+      - Acceleration unit: g
+    - Column 4: temperature in degree Celsius (°C)
+    - Column 5: light in lux (lx)
 
 ## Scripts
 
 `is_data_exploitable.ipynb`:     
-- **Aim**: Checks that the actimetric data is present and exploitable (the data cannot be used if the exposure time is less than 5 days).  
+- **Aim**: Checks that the actimetric data is present and exploitable (the data cannot be used if the exposure time is less than 5 days). 
 - **Input**: `right.cwa` or `left.cwa`  
 - **Output**: present or not present, exploitable or not exploitable (number of days of wearing)
 

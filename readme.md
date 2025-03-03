@@ -1,6 +1,6 @@
-# 
-_____________
 # R and Python project for Master’s internship 
+_____________
+# Actimetry and use of the paretic upper limb in post-stroke patients
 
 ## Scientific problem
 A stroke is an acquired brain injury that occurs due to the obstruction or hemorrhage of a blood vessel. It is the leading cause of acquired disability in France.

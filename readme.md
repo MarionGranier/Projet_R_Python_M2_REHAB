@@ -57,4 +57,6 @@ For each patient and each month:
 ## Results organization
 No results available yet...
 
+## Reference
+ClinicalTrials.gov. (2024). Actimetry Monitoring of the Paretic Upper Limb in Chronic Post Stroke. (ParUse). https://clinicaltrials.gov/study/NCT05581602locStr=Montpellier,%20France&country=France&state=Occitanie&cit =Montpellier&cond=Stroke,%20Chronic&rank=3 
 #

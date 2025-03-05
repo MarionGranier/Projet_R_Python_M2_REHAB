@@ -52,7 +52,16 @@ For each patient and each month:
 `is_data_exploitable.ipynb`:     
 - **Aim**: Checks that the actimetric data is present and exploitable (the data cannot be used if the exposure time is less than 5 days). 
 - **Input**: `right.cwa` or `left.cwa`  
-- **Output**: present or not present, exploitable or not exploitable (number of days of wearing)
+- **Output**: Present or not present, exploitable or not exploitable (number of days of wearing)
+
+`first_analysis_all_patients.ipynb`:
+- **Aim**: Calculate FuncUseRatio from single patient actimetric data.
+- **Input**: `right_ymd.csv` and `left_ymd.csv`
+- **Prerequisites**: Change the month variable in `get_data.ipynb` and `handle_data.py` and run them
+- **Output**:
+    - `results_FuncUsePerDay_CXPXX_MX.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per day for the patient
+    - `results_CXPXX_MX.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per month for the patient
+    - `all_global_results.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per month for all patients
 
 ## Results organization
 No results available yet...

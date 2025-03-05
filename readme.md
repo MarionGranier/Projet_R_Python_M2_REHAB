@@ -28,7 +28,7 @@ Analysis in progress...
 
 ### Participants data:
 `participants_X.csv`:   
-- `X` is the ID of the month of record (`0` = first month ; `1` = second month ; `2` = third month ; `3` = fourth month ; `4` = fifth month ; `5` = sixth month)
+- `X` is the ID of the month of record (`1` = first month ; `2` = second month ; `3` = third month ; `4` = fourth month ; `5` = fifth month ; `6` = sixth month)
 - The file contains, for each patient, their anonymous ID, the start and end date of recording, the sampling frequency, their age, their laterality, the number of months post-stroke, the paretic side, the Fugl-Meyer (FM) score (/66), the Barthel score (/100), the Box and Blocks test (bbt) scores.
 
 ### Actimetry data: 
@@ -57,7 +57,9 @@ For each patient and each month:
 `first_analysis_all_patients.ipynb`:
 - **Aim**: Calculate FuncUseRatio from single patient actimetric data.
 - **Input**: `right_ymd.csv` and `left_ymd.csv` in `data` → `data_actimetry` → `CXPXX_MX` folder
-- **Prerequisites**: Change the month variable in `get_data.ipynb` and `handle_data.py` and run them
+- **Prerequisites**:
+    - Change the month variable in `get_data.ipynb` and run it
+    - Change the month variable in `handle_data.py`
 - **Output**:
     - `results_FuncUsePerDay_CXPXX_MX.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per day for the patient
     - `results_CXPXX_MX.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per month for the patient

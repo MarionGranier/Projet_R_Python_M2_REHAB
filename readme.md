@@ -60,8 +60,8 @@ For each patient and each month:
 - **Output**:
     - `results_FuncUsePerDay_CXPXX_MX.csv`: FuncUse and FuncUseRatio per day for the patient
     - `results_CXPXX_MX.csv`: FuncUse and FuncUseRatio per month for the patient
-    - `all_global_day_results.csv`: FuncUse and FuncUseRatio per day for all patients
-    - `all_global_results.csv`: FuncUse and FuncUseRatio per month for all patients
+    - `results_FuncUsePerDay_all_patients.csv`: FuncUse and FuncUseRatio per day for all patients
+    - `results_FuncUse_all_patients.csv`: FuncUse and FuncUseRatio per month for all patients
 
 ## Results organization
 No results available yet...

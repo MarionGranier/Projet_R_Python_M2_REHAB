@@ -1,2 +1,2 @@
 ﻿folder_name;is_patient;parent_folder;paretic_side;start_day;end_day;start_month;end_month;start_year;end_year;age;FMScore;freq
-C0P00_M0;True;data_actimetry;left;1;7;1;1;2020;2020;20;66;50
+C0P00_M1;True;data_actimetry;left;1;7;1;1;2020;2020;20;66;50

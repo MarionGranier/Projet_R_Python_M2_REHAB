@@ -10,7 +10,7 @@ Depending on the location and extent of the affected area, the consequences of a
 The primary objective of this study is to investigate whether the intra-individual variability of the FuncUseRatio, measured over one week in chronic-phase post-stroke patients, is significantly different over six consecutive months, based on accelerometric measurements in an ecological setting.
 
 ### Method:
-Each participant wore an AX3 accelerometer (Axivity, Newcastle Helix, England, https://axivity.com/product/ax3) on each wrist at home for 7 days per month over six consecutive months. During these 7 days of accelerometer wear, participants were required to complete an activity journal, recording the start and end times of each activity performed. After each meal, they had to rate their fatigue using a Visual Analog Scale (VAS). The wristbands containing the accelerometers were not to be removed during the 7-day recording period.
+Each participant wore an AX3 accelerometer (Axivity, Newcastle Helix, England, https://axivity.com/product/ax3) on each wrist at home for 7 days per month over six consecutive months. During these 7 days of accelerometer wear, participants were required to complete an activity journal, recording the start and end times of each activity performed. The wristbands containing the accelerometers were not to be removed during the 7-day recording period.
 
 ### Participants:
 5 hemiparetic patients in the chronic phase of stroke.
@@ -58,10 +58,10 @@ For each patient and each month:
 - **Aim**: Calculate FuncUseRatio from single patient actimetric data.
 - **Input**: `right.csv` and `left.csv` in `data` → `data_actimetry` → `CXPXX_MX` folder
 - **Output**:
-    - `results_FuncUsePerDay_CXPXX_MX.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per day for the patient
-    - `results_CXPXX_MX.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per month for the patient
-    - `all_global_day_results.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per day for all patients
-    - `all_global_results.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per month for all patients
+    - `results_FuncUsePerDay_CXPXX_MX.csv`: FuncUse and FuncUseRatio per day for the patient
+    - `results_CXPXX_MX.csv`: FuncUse and FuncUseRatio per month for the patient
+    - `all_global_day_results.csv`: FuncUse and FuncUseRatio per day for all patients
+    - `all_global_results.csv`: FuncUse and FuncUseRatio per month for all patients
 
 ## Results organization
 No results available yet...

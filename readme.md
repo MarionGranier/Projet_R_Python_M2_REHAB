@@ -51,7 +51,7 @@ For each patient and each month:
 ## Notebooks organization
 `is_data_exploitable.ipynb`:     
 - **Aim**: Checks that the actimetric data is present and exploitable (the data cannot be used if the exposure time is less than 5 days). 
-- **Input**: `right.cwa` or `left.cwa` in `data` → `data_actimetry` → `CXPXX_MX` folder
+- **Input**: `right.cwa` and `left.cwa` in `data` → `data_actimetry` → `CXPXX_MX` folder
 - **Output**: Present or not present, exploitable or not exploitable (number of days of wearing)
 
 `first_analysis_all_patients.ipynb`:

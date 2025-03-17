@@ -33,7 +33,7 @@ Analysis in progress...
 
 ### Actimetry data: 
 For each patient and each month:
-- `left_ymd.csv` and `right_ymd.csv`: 7-day actimetric data from each patient's arm
+- `left.csv` and `right.csv`: 7-day actimetric data from each patient's arm
     - Column 0: time stamp (YYYY-MM-DD HH:MM:SS.SSS)
     - Column 1, 2 and 3: acceleration of x, y and z axes
       - Sampling frequency: 50 Hz
@@ -56,13 +56,11 @@ For each patient and each month:
 
 `first_analysis_all_patients.ipynb`:
 - **Aim**: Calculate FuncUseRatio from single patient actimetric data.
-- **Input**: `right_ymd.csv` and `left_ymd.csv` in `data` → `data_actimetry` → `CXPXX_MX` folder
-- **Prerequisites**:
-    - Change the month variable in `get_data.ipynb` and run it
-    - Change the month variable in `handle_data.py`
+- **Input**: `right.csv` and `left.csv` in `data` → `data_actimetry` → `CXPXX_MX` folder
 - **Output**:
     - `results_FuncUsePerDay_CXPXX_MX.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per day for the patient
     - `results_CXPXX_MX.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per month for the patient
+    - `all_global_day_results.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per day for all patients
     - `all_global_results.csv`: FuncUse, FuncUseRatio, UseHours and UseHoursRatio per month for all patients
 
 ## Results organization

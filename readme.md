@@ -24,8 +24,8 @@ $\text{FuncUseRatio} = \frac{\text{FuncUse of paretic UL}}{\text{paretic and non
 
 *where FuncUse is the number of functional movements made with the arms. A functional movement of the upper limb satisfies two conditions: the arm elevation angle must be greater than 30°, and the movement must occur within a range of -30° to +30° around the horizontal plane (Leuenberger, 2017)*  
 
-## 2. Aim of the code
-The objective of this code is to check that all actimetric files are present, and calculate the FuncUse of the paretic and non-paretic arm and the FuncUseRatio for each patient across six months.
+## 2. Aim of the Python project code
+The objective of this project is to check that all actimetric files are present, and calculate the FuncUse of the paretic and non-paretic arm and the FuncUseRatio for each patient across six months.
 
 ## 3. Data organization
 

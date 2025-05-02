@@ -47,9 +47,8 @@ The objective of this code is to analyze the temporal variability of the FuncUse
 - **Aim:** To measure the reliability of FuncUseRatio values over six months by quantifying the consistency of repeated measurements for the same patient.
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Calculation:**  ICC(2,1) model is used, which assumes that the subjects and the months are a random effect.  
-$$
-\text{ICC(2,1)} = \frac{MS_R - MS_E}{MS_R + (k - 1) \cdot MS_E + \frac{k}{n} (MS_C - MS_E)}
-$$
+
+$\text{ICC(2,1)} = \frac{MS_R - MS_E}{MS_R + (k - 1) \cdot MS_E + \frac{k}{n} (MS_C - MS_E)}$
 *where:*    
 \( MS_R \) *is the variance between subjects*  
 \( MS_C \) *is the variance between FuncUseRatio across months*  

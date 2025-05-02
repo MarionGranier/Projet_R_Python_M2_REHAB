@@ -1,0 +1,71 @@
+
+
+/* Text */
+body {
+  text-align: justify !important;
+  font-size: 16px; /* équivalent à ~12 pt */
+  color: #333;
+  background-color: #ffffff;
+  padding: 20px;
+  line-height: 1.5;
+  margin-right: 40px !important;  /* Appliquer la marge droite aux cellules de code */
+  overflow-x: hidden; /* Empêche les débordements horizontaux */
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h1.title {
+  display: none;
+}
+
+/* Color titles */
+h1 {
+  color: #0a1d44; /* bleu très foncé */
+  border-bottom: 2px solid #0a1d44;
+}
+
+h2 {
+  color: #143a75; /* un peu plus clair */
+  padding-left: 10px;
+}
+
+h3 {
+  color: #1d5ab8; /* encore plus clair */
+  padding-left: 20px;
+}
+
+h4 {
+  color: #397ddf;
+  padding-left: 30px;
+}
+
+/* Alignement justifié avec marges à droite */
+p, div, .text_cell_render {
+  text-align: justify !important;
+}
+
+/* Appliquer une marge droite aux tableaux */
+
+
+/* Cibler les cellules de code (encadrés de code) */
+.code_cell pre, .code_cell code {
+  margin-right: 40px !important;  /* Appliquer la marge droite aux cellules de code */
+}
+
+/* Appliquer overflow sur les sorties de code */
+.output_area {
+  overflow: hidden; /* Permet le défilement dans les sorties de code si nécessaire */
+}
+
+/* Cibler les éléments contenant du texte/code pour éviter un débordement horizontal */
+.output_subarea pre, .output_subarea code {
+  white-space: pre-wrap; /* Permet de faire passer les longs textes sur plusieurs lignes */
+  word-wrap: break-word; /* Coupe les mots trop longs pour éviter le débordement horizontal */
+  overflow: hidden; /* Assure un seul curseur si nécessaire */
+}

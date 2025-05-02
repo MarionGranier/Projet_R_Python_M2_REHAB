@@ -1,7 +1,8 @@
 # R and Python project for Master’s internship 
 _____________
 # Actimetry and use of the paretic upper limb in post-stroke patients: Analysis of the variability of the FuncUseRatio
-
+Marion GRANIER  
+2025-04-23  
 ## 1. Scientific problem
 ### 1.1. Context
 A stroke is an acquired brain injury caused by either the obstruction or hemorrhage of a blood vessel. It is the leading cause of acquired disability in France. Depending on the location and extent of the damage, the consequences of a stroke vary. One of the main consequences is upper limb motor impairment, known as paresis. Approximately 80% of hemiparetic individuals experience difficulties in performing daily life activities (Dusfour, 2023).  

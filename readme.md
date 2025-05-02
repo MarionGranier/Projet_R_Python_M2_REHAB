@@ -38,12 +38,12 @@ The objective of this code is to analyze the temporal variability of the FuncUse
 - `FuncUseRatio_day` : Daily FuncUseRatio 
 
 ## 4. Script organization
-### 4.1. Visualization of daily FuncUseRatio distributions (section 5.2) 
+### 4.1. Visualization of daily FuncUseRatio distributions
 - **Aim:** To visualize the distribution of dailies FuncUseRatio for each patient over the six months.
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Output:** `boxplot_FuncUseRatio_CXPXX.png` saved in the `results` folder: Boxplots showing the distribution of dailies FuncUseRatio across the six months for each patient.  
 
-### 4.2. Intraclass Correlation Coefficient (ICC) (section 5.3)
+### 4.2. Intraclass Correlation Coefficient (ICC)
 - **Aim:** To measure the reliability of FuncUseRatio values over six months by quantifying the consistency of repeated measurements for the same patient.
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Calculation:**  ICC(2,1) model is used, which assumes that the subjects and the months are a random effect.  
@@ -58,7 +58,7 @@ $$
 \( k \) *is the number of FuncUseRatio across months per subject*   
 - **Output:**  ICC value and 95% confidence interval, indicating the degree of agreement between FuncUseRatio measurements across months.  
 
-### 4.3. Coefficient of Variation (CV) (section 5.4) 
+### 4.3. Coefficient of Variation (CV)
 - **Aim:** To assess the relative dispersion of FuncUseRatio measurements by calculating the ratio between the standard deviation and the mean.
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Calculation:** 

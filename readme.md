@@ -24,17 +24,64 @@ $\text{FuncUseRatio} = \frac{\text{FuncUse of paretic UL}}{\text{paretic and non
 
 *where FuncUse is the number of functional movements made with the arms. A functional movement of the upper limb satisfies two conditions: the arm elevation angle must be greater than 30°, and the movement must occur within a range of -30° to +30° around the horizontal plane (Leuenberger, 2017).*  
 
+## 2. Python project  
 
-## 2. Organization
-
-### 2.1. Python Project
+### 2.1. Aim  
 The objective of this project is to check that all actimetric files are present, and calculate the FuncUse of the paretic and non-paretic arm and the FuncUseRatio for each patient across six months.  
 
-### 2.2. RStudio Project
-The objective of this project is to analyze the temporal variability of the FuncUseRatio metric for each patient across six months. The analysis includes visualization, reliability assessment via the Intraclass Correlation Coefficient (ICC), and variability quantification via the Coefficient of Variation (CV).  
+## 2.2. Data organization
+
+### 2.2.1. Participants data
+`participants_X.csv` :   
+- `X` is the ID of the month of record (from `1` = first month to `6` = sixth month)
+- The file contains, for each patient: 
+    - `folder_name` : Patient ID (e.g., C1P30 corresponding to investigation center 1 and the 30th patient included in the study)
+    - `is_patient` : Patient (True) or healthy subject (False)
+    - `parent_folder` : Actimetric data folder name
+    - `paretic_side` : Right or left paretic side
+    - `start_day`, `start_month`, `start_year` : Start date of recording
+    - `end_day`, `end_month`, `end_year` : End date of recording
+    - `age` : Subject's age on the day of inclusion
+    - `FMScore` : The Fugl-Meyer score (upper-limb function, /66)
+    - `freq` : Sampling frequency
+    - `time_stroke` : Number of months post-stroke
+    - `laterality` : Laterality
+    - `barthel` : Barthel score (autonomy index, /100)
+    - `bbt_paretic` and `bbt_non_paretic` : Box and Block test scores (gross motor function)
+
+### 2.2.2. Actimetry data 
+For each patient and each month:
+- `left.csv` and `right.csv` : 7-day actimetric data from each patient's arm
+    - Column 0: time stamp (YYYY-MM-DD HH:MM:SS.SSS)
+    - Column 1, 2 and 3: acceleration of x, y and z axes
+      - Sampling frequency: 50 Hz
+      - Amplitude range: - 8 g, + 8 g
+      - Acceleration unit: g  
+
+The data is not available on GitHub because the files are too large. To obtain the data, please contact marion.granier02@etu.umontpellier.fr
+
+## 2.3. Notebooks organization  
+In this Jupyter notebook, we check if all actimetrics data csv files are present and we calculate the FuncUse of the paretic and non-paretic arms, along with their ratio for each day, for all patients and all months.  
+
+`check_data.ipynb` :     
+- **Aim**: Checks that the actimetric data csv file is present. 
+- **Input**: 
+    - `participants_X.csv` in `data` folder
+    - `right.csv` and `left.csv` in `data` → `data_actimetry` → `CXPXX_MX` folder
+- **Output**: Present or not present.
+
+`analysis_all_patients.ipynb` :
+- This script is inspired by Victor Fernando Lopes De Souza's script.
+- **Aim**: Calculate FuncUseRatio for each patient and each wearing day.
+- **Input**: 
+    - `participants_X.csv` in `data` folder
+    - `right.csv` and `left.csv` in `data` → `data_actimetry` → `CXPXX_MX` folder
+- **Output**:
+    - `results_FuncUsePerDay_all_patients.csv` saved in `results`: FuncUse and FuncUseRatio per day for all patients
+    - `results_FuncUsePerDay_all_patients_filtered.csv` saved in `results`: FuncUse and FuncUseRatio per day of enough wearing for all patients
 
 
-## 3. Reference
+## 4. Reference
 ClinicalTrials.gov. (2024). *Actimetry Monitoring of the Paretic Upper Limb in Chronic Post Stroke. (ParUse).* https://clinicaltrials.gov/study/NCT05581602locStr=Montpellier,%20France&country=France&state=Occitanie&cit=Montpellier&cond=Stroke,%20Chronic&rank=3
 
 Dusfour et al. (2023). Comparison of wrist actimetry variables of paretic upper limb use in post stroke patients for ecological monitoring. *Journal of NeuroEngineering and Rehabilitation.* 20:52 https://doi.org/10.1186/s12984-023-01167-y

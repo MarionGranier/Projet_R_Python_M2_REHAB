@@ -1,0 +1,129 @@
+/* Text */
+body {
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  font-size: 16px; /* équivalent à ~12 pt */
+  color: #333;
+  background-color: #ffffff;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h1.title {
+  display: none;
+}
+
+/* Color titles */
+h1 {
+  color: #0a1d44; /* bleu très foncé */
+  border-bottom: 2px solid #0a1d44;
+}
+
+h2 {
+  color: #143a75; /* un peu plus clair */
+  padding-left: 10px;
+}
+
+h3 {
+  color: #1d5ab8; /* encore plus clair */
+  padding-left: 20px;
+}
+
+h4 {
+  color: #397ddf;
+  padding-left: 30px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Fusionne les bordures */
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+/* Table cells */
+table th, table td {
+  padding: 8px 12px;
+  text-align: left;
+}
+
+/* Table titles */
+table th {
+  background-color: #e1f0fa; /* Bleu pastel */
+  color: black; /* Texte en noir */
+  font-weight: bold; /* Titres en gras */
+  border-top: 2px solid #143a75; /* Bordure en haut du tableau */
+  border-bottom: 1px solid #143a75; /* Bordure sous la première ligne */
+}
+
+/* Row */
+table td {
+  border: none; /* Pas de bordure pour les cellules de données */
+}
+
+/* Rows color */
+table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Gris très clair */
+}
+
+/* Row line */
+table tr:last-child td {
+  border-bottom: 1px solid #143a75; /* Bordure sous la dernière ligne */
+}
+
+
+/* Code / chunks */
+pre, code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f4f4f4;
+  color: #222;
+  border: none;
+  padding: 2px 4px; /* Réduit le padding pour éviter le débordement */
+  border-radius: 3px;
+  overflow-x: auto;
+  white-space: normal; /* Permet à l'intérieur du code de se couper en ligne si nécessaire */
+  word-wrap: break-word; /* Permet au texte de se casser correctement */
+}
+
+pre {
+  margin: 20px 0;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 12px; /* Padding plus large pour un bloc de code complet */
+  line-height: 1.5; /* Améliore la lisibilité du code */
+}
+
+
+/* Figures */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  padding: 0;
+  background-color: #fdfdfd;
+}
+
+/* Author + date */
+.author, .date {
+  text-align: left;
+  color: #000000;
+  font-style: normal;
+}
+
+a {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}

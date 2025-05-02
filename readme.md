@@ -20,7 +20,7 @@ Five hemiparetic chronic-phase post-stroke patients participated in this study.
 
 ### 1.5. Outcome measure
 
-$\text{FuncUseRatio} = \frac{\text{FuncUse of paretic UL}}{\text{paretic and non-paretic UL FuncUse}}$
+$\text{FuncUseRatio} = \frac{\text{FuncUse of paretic UL}}{\text{paretic and non-paretic UL FuncUse}}$  
 
 *where FuncUse is the number of functional movements made with the arms. A functional movement of the upper limb satisfies two conditions: the arm elevation angle must be greater than 30°, and the movement must occur within a range of -30° to +30° around the horizontal plane (Leuenberger, 2017).*  
 
@@ -48,7 +48,8 @@ The objective of this code is to analyze the temporal variability of the FuncUse
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Calculation:**  ICC(2,1) model is used, which assumes that the subjects and the months are a random effect.  
 
-$\text{ICC(2,1)} = \frac{MS_R - MS_E}{MS_R + (k - 1) \cdot MS_E + \frac{k}{n} (MS_C - MS_E)}$
+$\text{ICC(2,1)} = \frac{MS_R - MS_E}{MS_R + (k - 1) \cdot MS_E + \frac{k}{n} (MS_C - MS_E)}$  
+
 *where:*    
 \( MS_R \) *is the variance between subjects*  
 \( MS_C \) *is the variance between FuncUseRatio across months*  
@@ -61,9 +62,8 @@ $\text{ICC(2,1)} = \frac{MS_R - MS_E}{MS_R + (k - 1) \cdot MS_E + \frac{k}{n} (M
 - **Aim:** To assess the relative dispersion of FuncUseRatio measurements by calculating the ratio between the standard deviation and the mean.
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Calculation:** 
-$$
-CV = \frac{\sigma}{\mu} \times 100
-$$
+$CV = \frac{\sigma}{\mu} \times 100$
+
 *where:*  
 \( \sigma \) *is the standard deviation of FuncUseRatio measurements*  
 \( \mu \) *is the mean of FuncUseRatio.*  

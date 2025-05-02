@@ -1,0 +1,6 @@
+folder_name;is_patient;parent_folder;paretic_side;start_day;end_day;start_month;end_month;start_year;end_year;age;FMScore;freq;time_stroke;laterality;barthel;bbt_paretic;bbt_non_paretic
+C1P01_M1;True;data_actimetry;left;21;29;3;3;2025;2025;23;33;50;121;right;100;0;64
+C1P30_M1;True;data_actimetry;right;29;7;11;12;2024;2024;67;45;50;36;right;95;17;46
+C1P31_M1;True;data_actimetry;left;10;18;1;1;2025;2025;75;49;50;123;right;80;35;52
+C1P32_M1;True;data_actimetry;right;29;7;11;12;2024;2024;78;45;50;121;right;90;20;50
+C1P33_M1;True;data_actimetry;left;29;7;11;12;2024;2024;81;54;50;33;right;85;18;38

@@ -31,7 +31,7 @@ The objective of this project is to check that all actimetric files are present,
 
 ## 2.2. Data organization
 
-### 2.2.1. Participants data
+#### 2.2.1. Participants data
 `participants_X.csv` :   
 - `X` is the ID of the month of record (from `1` = first month to `6` = sixth month)
 - The file contains, for each patient: 
@@ -49,7 +49,7 @@ The objective of this project is to check that all actimetric files are present,
     - `barthel` : Barthel score (autonomy index, /100)
     - `bbt_paretic` and `bbt_non_paretic` : Box and Block test scores (gross motor function)
 
-### 2.2.2. Actimetry data 
+#### 2.2.2. Actimetry data 
 For each patient and each month:
 - `left.csv` and `right.csv` : 7-day actimetric data from each patient's arm
     - Column 0: time stamp (YYYY-MM-DD HH:MM:SS.SSS)
@@ -60,7 +60,7 @@ For each patient and each month:
 
 The data is not available on GitHub because the files are too large. To obtain the data, please contact marion.granier02@etu.umontpellier.fr
 
-## 2.3. Notebooks organization  
+### 2.3. Notebooks organization  
 In this Jupyter notebook, we check if all actimetrics data csv files are present and we calculate the FuncUse of the paretic and non-paretic arms, along with their ratio for each day, for all patients and all months.  
 
 `check_data.ipynb` :     
@@ -82,10 +82,10 @@ In this Jupyter notebook, we check if all actimetrics data csv files are present
 
 ## 3. RStudio Project
 
-## 3.1. Aim 
+### 3.1. Aim 
 The objective of this project is to analyze the temporal variability of the FuncUseRatio metric for each patient across six months. The analysis includes visualization, reliability assessment via the Intraclass Correlation Coefficient (ICC), and variability quantification via the Coefficient of Variation (CV).
 
-## 3.2. Data organization
+### 3.2. Data organization
 **File:** `results_FuncUsePerDay_all_patients_filtered.csv`  
 **Columns:**  
 - `ID` : Patient ID (e.g., C1P30 corresponding to investigation center 1 and the 30th patient included in the study)  
@@ -95,13 +95,13 @@ The objective of this project is to analyze the temporal variability of the Func
 - `FuncUse_paretic_day` : Number of functional movements of the paretic arm  
 - `FuncUseRatio_day` : Daily FuncUseRatio 
 
-## 3.3. Script organization
-### 3.3.1. Visualization of daily FuncUseRatio distributions
+### 3.3. Script organization
+#### 3.3.1. Visualization of daily FuncUseRatio distributions
 - **Aim:** To visualize the distribution of dailies FuncUseRatio for each patient over the six months.
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Output:** `boxplot_FuncUseRatio_CXPXX.png` saved in the `results` folder: Boxplots showing the distribution of dailies FuncUseRatio across the six months for each patient.  
 
-### 3.3.2. Intraclass Correlation Coefficient (ICC)
+#### 3.3.2. Intraclass Correlation Coefficient (ICC)
 - **Aim:** To measure the reliability of FuncUseRatio values over six months by quantifying the consistency of repeated measurements for the same patient.
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Calculation:**  ICC(2,1) model is used, which assumes that the subjects and the months are a random effect.  
@@ -116,7 +116,7 @@ $n$ *is the number of subjects*
 $k$ *is the number of FuncUseRatio across months per subject*   
 - **Output:**  ICC value and 95% confidence interval, indicating the degree of agreement between FuncUseRatio measurements across months.  
 
-### 3.3.3. Coefficient of Variation (CV)
+#### 3.3.3. Coefficient of Variation (CV)
 - **Aim:** To assess the relative dispersion of FuncUseRatio measurements by calculating the ratio between the standard deviation and the mean.
 - **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
 - **Calculation:** 
@@ -127,12 +127,12 @@ $\sigma$ *is the standard deviation of FuncUseRatio measurements*
 $\mu$ *is the mean of FuncUseRatio.*  
 - **Output:** CV value for each patient, indicating the degree of variability in FuncUseRatio measurements across months.
 
-## 3.4. Conclusion
+### 3.4. Conclusion
 The analysis of the FuncUseRatio over six consecutive months in post-stroke patients reveals that:
 
 - The ICC value demonstrates good test-retest reliability (ICC between 0.75 and 0.9), indicating that the FuncUseRatio remains highly stable over time within each patient. 
 
-- The CV values are below 20% for four patients, indicating low to moderate intra-individual relative variability.  
+- The CV values are below 10% for two patients and between 10 and 20% for two other patients, indicating low to moderate intra-individual relative variability.  
 
 Together, these results support the conclusion that FuncUseRatio is a consistent and reliable metric for assessing upper limb use in daily life among chronic stroke patients. This is consistent with the fact that, in the absence of intervention, motor deficits tend to remain relatively stable in the chronic phase of stroke.  
 It may serve as a valuable outcome metric for long-term monitoring of spontaneous arm use at home.

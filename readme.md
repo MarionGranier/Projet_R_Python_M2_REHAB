@@ -55,6 +55,7 @@ For each patient and each month:
       - Sampling frequency: 50 Hz
       - Amplitude range: - 8 g, + 8 g
       - Acceleration unit: g
+The files containing the accelerometry data is too large. To obtain the data, please contact marion.granier02@etu.umontpellier.fr
 
 ## 4. Notebooks organization  
 In this Jupyter notebook, we check if all actimetrics data csv files are present and we calculate the FuncUse of the paretic and non-paretic arms, along with their ratio for each day, for all patients and all months.  

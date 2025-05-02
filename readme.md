@@ -51,11 +51,11 @@ The objective of this code is to analyze the temporal variability of the FuncUse
 $\text{ICC(2,1)} = \frac{MS_R - MS_E}{MS_R + (k - 1) \cdot MS_E + \frac{k}{n} (MS_C - MS_E)}$  
 
 *where:*    
-\( MS_R \) *is the variance between subjects*  
-\( MS_C \) *is the variance between FuncUseRatio across months*  
-\( MS_E \) *is the residual error variance*  
-\( n \) *is the number of subjects*  
-\( k \) *is the number of FuncUseRatio across months per subject*   
+$MS_R$ *is the variance between subjects*  
+$MS_C$ *is the variance between FuncUseRatio across months*  
+$MS_E$ *is the residual error variance*  
+$n$ *is the number of subjects*  
+$k$ *is the number of FuncUseRatio across months per subject*   
 - **Output:**  ICC value and 95% confidence interval, indicating the degree of agreement between FuncUseRatio measurements across months.  
 
 ### 4.3. Coefficient of Variation (CV)
@@ -65,8 +65,8 @@ $\text{ICC(2,1)} = \frac{MS_R - MS_E}{MS_R + (k - 1) \cdot MS_E + \frac{k}{n} (M
 $CV = \frac{\sigma}{\mu} \times 100$
 
 *where:*  
-\( \sigma \) *is the standard deviation of FuncUseRatio measurements*  
-\( \mu \) *is the mean of FuncUseRatio.*  
+$\sigma$ *is the standard deviation of FuncUseRatio measurements*  
+$\mu$ *is the mean of FuncUseRatio.*  
 - **Output:** CV value for each patient, indicating the degree of variability in FuncUseRatio measurements across months.
 
 ## 5. Conclusion

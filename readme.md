@@ -55,6 +55,7 @@ For each patient and each month:
       - Sampling frequency: 50 Hz
       - Amplitude range: - 8 g, + 8 g
       - Acceleration unit: g  
+
 The data is not available on GitHub because the files are too large. To obtain the data, please contact marion.granier02@etu.umontpellier.fr
 
 ## 4. Notebooks organization  

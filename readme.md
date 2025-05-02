@@ -29,7 +29,7 @@ $\text{FuncUseRatio} = \frac{\text{FuncUse of paretic UL}}{\text{paretic and non
 ### 2.1. Aim  
 The objective of this project is to check that all actimetric files are present, and calculate the FuncUse of the paretic and non-paretic arm and the FuncUseRatio for each patient across six months.  
 
-## 2.2. Data organization
+### 2.2. Data organization
 
 #### 2.2.1. Participants data
 `participants_X.csv` :   

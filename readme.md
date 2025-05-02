@@ -80,6 +80,62 @@ In this Jupyter notebook, we check if all actimetrics data csv files are present
     - `results_FuncUsePerDay_all_patients.csv` saved in `results`: FuncUse and FuncUseRatio per day for all patients
     - `results_FuncUsePerDay_all_patients_filtered.csv` saved in `results`: FuncUse and FuncUseRatio per day of enough wearing for all patients
 
+## 3. RStudio Project
+
+## 3.1. Aim 
+The objective of this project is to analyze the temporal variability of the FuncUseRatio metric for each patient across six months. The analysis includes visualization, reliability assessment via the Intraclass Correlation Coefficient (ICC), and variability quantification via the Coefficient of Variation (CV).
+
+## 3.2. Data organization
+**File:** `results_FuncUsePerDay_all_patients_filtered.csv`  
+**Columns:**  
+- `ID` : Patient ID (e.g., C1P30 corresponding to investigation center 1 and the 30th patient included in the study)  
+- `month` : Month of recording (from 1 = first month to 6 = sixth month)  
+- `day` : Day of recording (from 1 = first day to 8 = eighth day)  
+- `FuncUse_non_paretic_day` : Number of functional movements of the non-paretic arm  
+- `FuncUse_paretic_day` : Number of functional movements of the paretic arm  
+- `FuncUseRatio_day` : Daily FuncUseRatio 
+
+## 3.3. Script organization
+### 3.3.1. Visualization of daily FuncUseRatio distributions
+- **Aim:** To visualize the distribution of dailies FuncUseRatio for each patient over the six months.
+- **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
+- **Output:** `boxplot_FuncUseRatio_CXPXX.png` saved in the `results` folder: Boxplots showing the distribution of dailies FuncUseRatio across the six months for each patient.  
+
+### 3.3.2. Intraclass Correlation Coefficient (ICC)
+- **Aim:** To measure the reliability of FuncUseRatio values over six months by quantifying the consistency of repeated measurements for the same patient.
+- **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
+- **Calculation:**  ICC(2,1) model is used, which assumes that the subjects and the months are a random effect.  
+
+$\text{ICC(2,1)} = \frac{MS_R - MS_E}{MS_R + (k - 1) \cdot MS_E + \frac{k}{n} (MS_C - MS_E)}$  
+
+*where:*    
+$MS_R$ *is the variance between subjects*  
+$MS_C$ *is the variance between FuncUseRatio across months*  
+$MS_E$ *is the residual error variance*  
+$n$ *is the number of subjects*  
+$k$ *is the number of FuncUseRatio across months per subject*   
+- **Output:**  ICC value and 95% confidence interval, indicating the degree of agreement between FuncUseRatio measurements across months.  
+
+### 3.3.3. Coefficient of Variation (CV)
+- **Aim:** To assess the relative dispersion of FuncUseRatio measurements by calculating the ratio between the standard deviation and the mean.
+- **Input:** `results_FuncUsePerDay_all_patients_filtered.csv` in `data` folder
+- **Calculation:** 
+$CV = \frac{\sigma}{\mu} \times 100$
+
+*where:*  
+$\sigma$ *is the standard deviation of FuncUseRatio measurements*  
+$\mu$ *is the mean of FuncUseRatio.*  
+- **Output:** CV value for each patient, indicating the degree of variability in FuncUseRatio measurements across months.
+
+## 3.4. Conclusion
+The analysis of the FuncUseRatio over six consecutive months in post-stroke patients reveals that:
+
+- The ICC value demonstrates good test-retest reliability (ICC between 0.75 and 0.9), indicating that the FuncUseRatio remains highly stable over time within each patient. 
+
+- The CV values are below 20% for four patients, indicating low to moderate intra-individual relative variability.  
+
+Together, these results support the conclusion that FuncUseRatio is a consistent and reliable metric for assessing upper limb use in daily life among chronic stroke patients. This is consistent with the fact that, in the absence of intervention, motor deficits tend to remain relatively stable in the chronic phase of stroke.  
+It may serve as a valuable outcome metric for long-term monitoring of spontaneous arm use at home.
 
 ## 4. Reference
 ClinicalTrials.gov. (2024). *Actimetry Monitoring of the Paretic Upper Limb in Chronic Post Stroke. (ParUse).* https://clinicaltrials.gov/study/NCT05581602locStr=Montpellier,%20France&country=France&state=Occitanie&cit=Montpellier&cond=Stroke,%20Chronic&rank=3

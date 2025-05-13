@@ -58,7 +58,7 @@ For each patient and each month:
       - Amplitude range: - 8 g, + 8 g
       - Acceleration unit: g  
 
-The data is not available on GitHub because the files are too large. To obtain the data, please click on this link [grosfi.ch/AmHAFsek8cb](https://www.grosfichiers.com/AmHAFsek8cb) (the link expires on May 29, 2025) or contact marion.granier02@etu.umontpellier.fr
+The data is not available on GitHub because the files are too large. To obtain the data, please click on this link [grosfi.ch/AmHAFsek8cb](https://www.grosfichiers.com/AmHAFsek8cb) (the link expires on May 27, 2025) or contact marion.granier02@etu.umontpellier.fr
 
 ### 2.3. Notebooks organization  
 In this Jupyter notebook, we check if all actimetrics data csv files are present and we calculate the FuncUse of the paretic and non-paretic arms, along with their ratio for each day, for all patients and all months.  
